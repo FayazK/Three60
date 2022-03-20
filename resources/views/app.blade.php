@@ -4,9 +4,17 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Laravel with Inertia</title>
-		@vite
+		<!-- Styles -->
+		<link rel="stylesheet" href="{{ mix('css/app.css') }}">
+
+		@routes
+		<!-- Scripts -->
+		<script src="{{ mix('js/app.js') }}" defer></script>
 	</head>
 	<body class="antialiased bg-gray-900">
 		@inertia
+		@env ('local')
+			<script src="https://three60.test/browser-sync/browser-sync-client.js"></script>
+		@endenv
 	</body>
 </html>
