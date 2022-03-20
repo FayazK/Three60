@@ -28,10 +28,10 @@
     },
     "dependencies": {
         "@vicons/ionicons5": "^0.12.0",
+        "copy-to-clipboard": "^3.3.1",
         "generate-password": "^1.7.0",
         "naive-ui": "^2.26.4",
         "omgopass": "^3.2.1",
-        "password": "^0.1.1",
         "vfonts": "^0.1.0"
     }
 }
