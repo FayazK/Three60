@@ -25,21 +25,11 @@
             :collapsed-width="64"
             :collapsed-icon-size="22"
             :options="menuOptions"
+            indent="12"
         />
       </n-layout-sider>
       <n-layout content-style="padding: 24px;"  :native-scrollbar="false">
-        <n-h2>Pingshan Road</n-h2>
-        <n-h2>Pingshan Road</n-h2>
-        <n-h2>Pingshan Road</n-h2>
-        <n-h2>Pingshan Road</n-h2>
-        <n-h2>Pingshan Road</n-h2>
-        <n-h2>Pingshan Road</n-h2>
-        <n-h2>Pingshan Road</n-h2>
-        <n-h2>Pingshan Road</n-h2>
-        <n-h2>Pingshan Road</n-h2>
-        <n-h2>Pingshan Road</n-h2>
-        <n-h2>Pingshan Road</n-h2>
-        <n-h2>Pingshan Road</n-h2>
+        <slot></slot>
       </n-layout>
     </n-layout>
     <n-layout-footer

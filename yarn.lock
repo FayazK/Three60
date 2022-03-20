@@ -1015,6 +1015,11 @@ parse-json@^5.0.0:
     json-parse-even-better-errors "^2.3.0"
     lines-and-columns "^1.1.6"
 
+password@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/password/-/password-0.1.1.tgz#c09d49f6a593a838bced6beb3a213b6774da5884"
+  integrity sha1-wJ1J9qWTqDi87WvrOiE7Z3TaWIQ=
+
 path-key@^3.1.0:
   version "3.1.1"
   resolved "https://registry.npmjs.org/path-key/-/path-key-3.1.1.tgz"

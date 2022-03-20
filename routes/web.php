@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Generate\PasswordController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return inertia('welcome');
-});
+Route::get( '/', function() {
+    return inertia( 'welcome' );
+} );
 
-Route::get('test',function(){
-   return inertia('test');
-});
+Route::get( 'test', function() {
+    return inertia( 'test' );
+} );
+
+Route::prefix( 'generate' )->group( function() {
+    Route::get( 'simple-password', [ PasswordController::class, 'simple' ] );
+} );
