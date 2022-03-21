@@ -1,6 +1,4 @@
 <template>
-  <n-message-provider>
-
     <n-layout class="h-screen relative">
       <n-layout-header class="h-[38px] flex" :inverted="inverted" bordered>
         <n-switch v-model:value="inverted" size="small" class="self-center">
@@ -27,7 +25,7 @@
               :collapsed-width="64"
               :collapsed-icon-size="22"
               :options="menuOptions"
-              indent="12"
+              :indent="12"
           />
         </n-layout-sider>
         <n-layout content-style="padding:12px" :native-scrollbar="false">
@@ -55,7 +53,6 @@
         Coded with ❤ by <a href="https://fayazk.com" target="_blank">Fayaz K</a>
       </n-layout-footer>
     </n-layout>
-  </n-message-provider>
 </template>
 
 <script setup>
@@ -64,7 +61,6 @@ import {
   NPageHeader,
   NLayoutHeader,
   NLayoutSider,
-  NMessageProvider,
   NLayoutFooter,
   NMenu,
   NIcon,
