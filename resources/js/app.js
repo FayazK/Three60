@@ -10,6 +10,9 @@ createInertiaApp({
     title: (title) => `${title} - ${appName}`,
     resolve: (name) => require(`./Pages/${name}.vue`),
     setup({ el, app, props, plugin }) {
+        const meta = document.createElement('meta')
+        meta.name = 'naive-ui-style'
+        document.head.appendChild(meta)
         return createApp({ render: () => h(app, props) })
             .use(plugin)
             .mixin({ methods: { route } })
