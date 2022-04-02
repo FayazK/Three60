@@ -1,58 +1,58 @@
 <template>
-    <n-layout class="h-screen relative">
-      <n-layout-header class="h-[38px] flex" :inverted="inverted" bordered>
-        <n-switch v-model:value="inverted" size="small" class="self-center">
-          <template #checked-icon>
-            <n-icon :component="Moon"/>
-          </template>
-          <template #unchecked-icon>
-            <n-icon :component="Sunny"/>
-          </template>
-        </n-switch>
-      </n-layout-header>
-      <n-layout position="absolute" style="top: 38px; bottom: 37px" has-sider>
-        <n-layout-sider
-            bordered
-            show-trigger
-            collapse-mode="width"
-            :collapsed-width="64"
-            :width="240"
+  <n-layout class="h-screen relative">
+    <n-layout-header class="h-[38px] flex" :inverted="inverted" bordered>
+      <n-switch v-model:value="inverted" size="small" class="self-center">
+        <template #checked-icon>
+          <n-icon :component="Moon"/>
+        </template>
+        <template #unchecked-icon>
+          <n-icon :component="Sunny"/>
+        </template>
+      </n-switch>
+    </n-layout-header>
+    <n-layout position="absolute" style="top: 38px; bottom: 37px" has-sider>
+      <n-layout-sider
+          bordered
+          show-trigger
+          collapse-mode="width"
+          :collapsed-width="64"
+          :width="240"
+          :inverted="inverted"
+          :native-scrollbar="false"
+      >
+        <n-menu
             :inverted="inverted"
-            :native-scrollbar="false"
-        >
-          <n-menu
-              :inverted="inverted"
-              :collapsed-width="64"
-              :collapsed-icon-size="22"
-              :options="menuOptions"
-              :indent="12"
-          />
-        </n-layout-sider>
-        <n-layout content-style="padding:12px" :native-scrollbar="false">
-          <n-page-header>
-            <template #title>
-              <slot name="heading"></slot>
-            </template>
-            <template #extra>
-              <n-space>
-                <slot name="action-buttons"></slot>
-              </n-space>
-            </template>
-          </n-page-header>
-          <n-layout class="mt-4">
-            <slot></slot>
-          </n-layout>
+            :collapsed-width="64"
+            :collapsed-icon-size="22"
+            :options="menuOptions"
+            :indent="12"
+        />
+      </n-layout-sider>
+      <n-layout content-style="padding:12px" :native-scrollbar="false">
+        <n-page-header>
+          <template #title>
+            <slot name="heading"></slot>
+          </template>
+          <template #extra>
+            <n-space>
+              <slot name="action-buttons"></slot>
+            </n-space>
+          </template>
+        </n-page-header>
+        <n-layout class="mt-4">
+          <slot></slot>
         </n-layout>
       </n-layout>
-      <n-layout-footer
-          position="absolute"
-          class="p-2 text-right text-gray-400 text-sm"
-          bordered
-          :inverted="inverted"
-      >
-        Coded with ❤ by <a href="https://fayazk.com" target="_blank">Fayaz K</a>
-      </n-layout-footer>
     </n-layout>
+    <n-layout-footer
+        position="absolute"
+        class="p-2 text-right text-gray-400 text-sm"
+        bordered
+        :inverted="inverted"
+    >
+      Coded with ❤ by <a href="https://fayazk.com" target="_blank">Fayaz K</a>
+    </n-layout-footer>
+  </n-layout>
 </template>
 
 <script setup>
@@ -67,6 +67,8 @@ import {
   NSwitch
 } from 'naive-ui'
 import { h, ref } from 'vue'
+import { Link } from '@inertiajs/inertia-vue3'
+
 import {
   BookOutline as BookIcon,
   PersonOutline as PersonIcon,
@@ -88,14 +90,19 @@ const menuOptions = [
     icon: renderIcon(BookIcon)
   },
   {
-    label: 'Pinball 1973',
-    key: 'pinball-1973',
+    label: 'Generators',
+    key: 'generators',
     icon: renderIcon(BookIcon),
-    disabled: true,
     children: [
       {
-        label: 'Rat',
-        key: 'rat'
+        label: () => h(Link,
+            {
+              href: route('generate.lorem-ipsum')
+            },
+            {
+              default: () => 'Lorem Ipsum Generator'
+            }),
+        key: 'lorem-ipsum',
       }
     ]
   },
@@ -106,8 +113,8 @@ const menuOptions = [
     icon: renderIcon(BookIcon)
   },
   {
-    label: 'Dance Dance Dance',
-    key: 'Dance Dance Dance',
+    label: 'Generators2',
+    key: 'generators2',
     icon: renderIcon(BookIcon),
     children: [
       {

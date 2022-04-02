@@ -34,6 +34,7 @@
         "lorem-ipsum": "^2.0.4",
         "naive-ui": "^2.26.4",
         "omgopass": "^3.2.1",
-        "vfonts": "^0.1.0"
+        "vfonts": "^0.1.0",
+        "vue-router": "^4.0.14"
     }
 }

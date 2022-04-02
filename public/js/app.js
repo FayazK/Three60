@@ -25171,20 +25171,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/icon/src/Icon.js");
-/* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/layout/src/Layout.js");
-/* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/page-header/src/PageHeader.js");
-/* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/layout/src/LayoutHeader.js");
-/* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/layout/src/LayoutSider.js");
-/* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/layout/src/LayoutFooter.js");
-/* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/menu/src/Menu.js");
-/* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/switch/src/Switch.js");
+/* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/icon/src/Icon.js");
+/* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/layout/src/Layout.js");
+/* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/page-header/src/PageHeader.js");
+/* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/layout/src/LayoutHeader.js");
+/* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/layout/src/LayoutSider.js");
+/* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/layout/src/LayoutFooter.js");
+/* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/menu/src/Menu.js");
+/* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/switch/src/Switch.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/BookOutline.js");
-/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/PersonOutline.js");
-/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/WineOutline.js");
-/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Sunny.js");
-/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Moon.js");
+/* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
+/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/BookOutline.js");
+/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/PersonOutline.js");
+/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/WineOutline.js");
+/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Sunny.js");
+/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Moon.js");
+
 
 
 
@@ -25195,7 +25197,7 @@ __webpack_require__.r(__webpack_exports__);
 
     function renderIcon(icon) {
       return function () {
-        return (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(naive_ui__WEBPACK_IMPORTED_MODULE_1__.NIcon, null, {
+        return (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(naive_ui__WEBPACK_IMPORTED_MODULE_2__.NIcon, null, {
           "default": function _default() {
             return (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(icon);
           }
@@ -25207,25 +25209,32 @@ __webpack_require__.r(__webpack_exports__);
     var menuOptions = [{
       label: 'Hear the Wind Sing',
       key: 'hear-the-wind-sing',
-      icon: renderIcon(_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_2__["default"])
+      icon: renderIcon(_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_3__["default"])
     }, {
-      label: 'Pinball 1973',
-      key: 'pinball-1973',
-      icon: renderIcon(_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_2__["default"]),
-      disabled: true,
+      label: 'Generators',
+      key: 'generators',
+      icon: renderIcon(_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_3__["default"]),
       children: [{
-        label: 'Rat',
-        key: 'rat'
+        label: function label() {
+          return (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(_inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.Link, {
+            href: route('generate.lorem-ipsum')
+          }, {
+            "default": function _default() {
+              return 'Lorem Ipsum Generator';
+            }
+          });
+        },
+        key: 'lorem-ipsum'
       }]
     }, {
       label: 'A Wild Sheep Chase',
       key: 'a-wild-sheep-chase',
       disabled: true,
-      icon: renderIcon(_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_2__["default"])
+      icon: renderIcon(_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_3__["default"])
     }, {
-      label: 'Dance Dance Dance',
-      key: 'Dance Dance Dance',
-      icon: renderIcon(_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_2__["default"]),
+      label: 'Generators2',
+      key: 'generators2',
+      icon: renderIcon(_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_3__["default"]),
       children: [{
         type: 'group',
         label: 'People',
@@ -25233,16 +25242,16 @@ __webpack_require__.r(__webpack_exports__);
         children: [{
           label: 'Narrator',
           key: 'narrator',
-          icon: renderIcon(_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_3__["default"])
+          icon: renderIcon(_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_4__["default"])
         }, {
           label: 'Sheep Man',
           key: 'sheep-man',
-          icon: renderIcon(_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_3__["default"])
+          icon: renderIcon(_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_4__["default"])
         }]
       }, {
         label: 'Beverage',
         key: 'beverage',
-        icon: renderIcon(_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_4__["default"]),
+        icon: renderIcon(_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_5__["default"]),
         children: [{
           label: 'Whisky',
           key: 'whisky'
@@ -25263,21 +25272,22 @@ __webpack_require__.r(__webpack_exports__);
       renderIcon: renderIcon,
       inverted: inverted,
       menuOptions: menuOptions,
-      NLayout: naive_ui__WEBPACK_IMPORTED_MODULE_5__["default"],
-      NPageHeader: naive_ui__WEBPACK_IMPORTED_MODULE_6__["default"],
-      NLayoutHeader: naive_ui__WEBPACK_IMPORTED_MODULE_7__["default"],
-      NLayoutSider: naive_ui__WEBPACK_IMPORTED_MODULE_8__["default"],
-      NLayoutFooter: naive_ui__WEBPACK_IMPORTED_MODULE_9__["default"],
-      NMenu: naive_ui__WEBPACK_IMPORTED_MODULE_10__["default"],
-      NIcon: naive_ui__WEBPACK_IMPORTED_MODULE_1__.NIcon,
-      NSwitch: naive_ui__WEBPACK_IMPORTED_MODULE_11__["default"],
+      NLayout: naive_ui__WEBPACK_IMPORTED_MODULE_6__["default"],
+      NPageHeader: naive_ui__WEBPACK_IMPORTED_MODULE_7__["default"],
+      NLayoutHeader: naive_ui__WEBPACK_IMPORTED_MODULE_8__["default"],
+      NLayoutSider: naive_ui__WEBPACK_IMPORTED_MODULE_9__["default"],
+      NLayoutFooter: naive_ui__WEBPACK_IMPORTED_MODULE_10__["default"],
+      NMenu: naive_ui__WEBPACK_IMPORTED_MODULE_11__["default"],
+      NIcon: naive_ui__WEBPACK_IMPORTED_MODULE_2__.NIcon,
+      NSwitch: naive_ui__WEBPACK_IMPORTED_MODULE_12__["default"],
       h: vue__WEBPACK_IMPORTED_MODULE_0__.h,
       ref: vue__WEBPACK_IMPORTED_MODULE_0__.ref,
-      BookIcon: _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_2__["default"],
-      PersonIcon: _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_3__["default"],
-      WineIcon: _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_4__["default"],
-      Sunny: _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_12__["default"],
-      Moon: _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_13__["default"]
+      Link: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.Link,
+      BookIcon: _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_3__["default"],
+      PersonIcon: _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_4__["default"],
+      WineIcon: _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_5__["default"],
+      Sunny: _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_13__["default"],
+      Moon: _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_14__["default"]
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
       enumerable: false,

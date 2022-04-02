@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Generate\DummyDataController;
 use App\Http\Controllers\Generate\PasswordController;
 use Illuminate\Support\Facades\Route;
 
@@ -24,4 +25,6 @@ Route::get( 'test', function() {
 
 Route::prefix( 'generate' )->group( function() {
     Route::get( 'simple-password', [ PasswordController::class, 'simple' ] );
+    Route::get( 'lorem-ipsum', [ DummyDataController::class, 'loremIpsum' ] )
+    ->name('generate.lorem-ipsum');
 } );
