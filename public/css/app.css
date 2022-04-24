@@ -1041,6 +1041,9 @@ select {
 .ml-6 {
   margin-left: 1.5rem;
 }
+.mt-14 {
+  margin-top: 3.5rem;
+}
 .block {
   display: block;
 }
@@ -1496,6 +1499,10 @@ select {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.\!text-lg {
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
 }
 .font-medium {
   font-weight: 500;

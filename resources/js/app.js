@@ -1,3 +1,5 @@
+import { NMessageProvider } from 'naive-ui'
+
 require('./bootstrap');
 
 import { createApp, h } from 'vue';
